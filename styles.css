@@ -20,7 +20,7 @@ model-viewer {
  /* height: 60%; */
   background-color: #223362;
   --poster-color: #ffffff00; 
-  min-height:489px; 
+  /* min-height:489px;  */
   position:relative; 
   top:21px; 
 }
@@ -35,14 +35,14 @@ model-viewer {
     margin-right: auto;
 }
 
-
+/* 
 @media screen and (min-width: 806px) {
   #controls {
    position:fixed; 
    top: 306px;
    margin-right: auto;
  }
-}
+} */
 
 .text_container {
   margin-left:56px; 
@@ -59,7 +59,7 @@ model-viewer {
 }
 
 /* layout for tablet */
-
+/* 
 @media screen and (min-width: 806px) {
   .main_container {
     display: flex;
@@ -67,7 +67,7 @@ model-viewer {
     padding:40px; 
     min-height:100vh; 
   }
-}
+} */
 
 .cwm-logo-responsive {
     position: relative;
@@ -79,17 +79,23 @@ model-viewer {
     margin-top: 15px;
 }
 
-@media screen and (min-width: 806px) {
+ @media all and (orientation: landscape) {
   .cwm-logo-responsive {
-    width:77%; 
+     left:10%;  
   }
+
+  .cwm-border-responsive {
+    position:absolute; 
+    top:0; 
+  }
+
   .header-wrapper {
     display:flex; 
     flex-direction: column;
-    min-height:380px;
+    /* min-height:380px; */
     width:800px; 
   }
-}
+} 
 
 .tank_codename-responsive {
     position: relative;
@@ -101,28 +107,42 @@ model-viewer {
     margin-top: 40px;
 }
 
-.cwm-banner-responsive {
-    /* bottom: 30px;
-    width: 50%;
-    display: block;
-    width: 90%; */
-    position: absolute;
-    /* top: 92%; */
-    left: 50%;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    max-width: 300px;
+@media all and (orientation: landscape) {
+.tank_codename-responsive {
+  left: 20%;
+ }
 }
 
-@media screen and (min-width:806px) {
+.cwm-banner-responsive {
+  /* bottom: 30px;
+  width: 50%;
+  display: block;
+  width: 90%; */
+  position: absolute;
+  top: 82%; 
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 300px;
+}
+
+@media all and (orientation: landscape) {
+.cwm-banner-responsive {
+  top:10%; 
+  left:80%; 
+ }
+}
+
+/* @media screen and (min-width:806px) {
   .cwm-banner-responsive {
     position: absolute;
     left:78%; 
     min-width:551px;  
     padding-top:50px; 
   }
-}
+} */
+
 
 .cwm-frame-responsive {
     bottom: 30px;
@@ -130,30 +150,36 @@ model-viewer {
     display: block;
     width: 90%;
     position: absolute;
-    top: 95%;
+    top: 91%;
     left: 50%;
     -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    /* max-width: 300px; */
-    }
-  
+    width: 300px;
+}
 
-@media screen and (min-width:806px) {
+@media all and (orientation: landscape) {
   .cwm-frame-responsive {
-   width:76%; 
+      width:800px;
+      max-height:35px;
+    }
 }
-  
-}
+
+
 .cwm-border-responsive {
     max-width: 246px;
     position: absolute;
     margin-left: 51px;
-    top: 17%;
+    top: 18%;
 }
 
+@media all and (orientation: landscape) {
+.cwm-border-responsive {
+  top: 37%;
+ }
+}
 
-@media screen and (min-width:806px) {
+/* @media screen and (min-width:806px) {
   .cwm-border-responsive {
     max-width: 380px;
     position: absolute;
@@ -161,7 +187,7 @@ model-viewer {
     height:189px; 
     top: -21px;
   }
-}
+} */
 
 
 .dim {
@@ -271,7 +297,7 @@ model-viewer > #ar-prompt > img {
 }
 
 /* desktop weapon position */
-
+/* 
 @media screen and (min-width:806px){
   .slot .poster .show {
     display:inherit; 
@@ -288,7 +314,6 @@ model-viewer > #ar-prompt > img {
     color: #ffff; 
     margin-top:0; 
  }
-
   .headline_controls {
    font-size:17px; 
  }
@@ -301,6 +326,10 @@ model-viewer > #ar-prompt > img {
   width:154%; 
  }
 
+ .cwm-frame-responsive {
+    background-image: url("Assets/cwm_banner_desktop.png");
+ }
+
   .header_wrapper {
     width: 660px; 
   }
@@ -310,20 +339,9 @@ model-viewer > #ar-prompt > img {
     top: 132px; 
   }
 
- .tank_codename-responsive {
-   position: relative;
-   left: 63%;
-   transform: translate(-50%, 0);
-   -ms-transform: translate(-50%, 0);
-   -webkit-transform: translate(-50%, 0);
-   width: 200px;
-   margin-top: 40px;
-   margin-bottom: -84px;
-  }
-  
   #default-poster {
    left: 30%; 
    top:20%; 
   }
 }
-
+ */
