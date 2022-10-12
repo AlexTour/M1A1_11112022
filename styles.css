@@ -222,6 +222,7 @@ model-viewer {
   .cwm-frame-responsive {
       min-width:600px;
       max-height:35px;
+      position:fixed;
     }
 }
 
